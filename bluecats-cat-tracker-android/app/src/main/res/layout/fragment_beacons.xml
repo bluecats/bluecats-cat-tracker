@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_last_updated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="Last updated at..."/>
+
+    </RelativeLayout>
+
+    <View style="@style/RowSeparator"
+          android:background="#0F70B1"/>
+
+    <FrameLayout android:id="@+id/fragment_beacons_list"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+
+</LinearLayout>
